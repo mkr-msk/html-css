@@ -1,43 +1,67 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link type="text/css" rel="stylesheet" href="style.css" />
         
-    
-        <title>Главная страница</title>
+        <title>Учебные работы</title>
+        
+        <link type="text/css" rel="stylesheet" href="style.css" />
     </head>
-
     <body>
+        <nav class="nav-container">
+            <ul class="top-nav">
+                <li class="top-nav__home"><a href="./index.html">Учебные работы</a></li>
+                <li><a href="./modal/index.html">Модальное окно</a></li>
+                <li><a href="./responsive/index.html">Адаптивный дизайн</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+            </ul>
+        </nav>
 
-        <header>
-            <h1>Главная страница</h1>
-        </header>
-
-        <div class="container">
-
-            <main class="main">
-                <h2>Подзаголовок</h2>
-                <p>
-                    Текст на странице. Текст на странице. Текст на странице. 
-                    Текст на странице. Текст на странице. Текст на странице. 
-                    Текст на странице. Текст на странице. Текст на странице. 
-                    Текст на странице. Текст на странице. Текст на странице. 
-                    Текст на странице. Текст на странице. Текст на странице.
-                </p>
-            </main>
-
-            <aside class="sidebar">
-                <a href="page2.html" class="button-link">Страница 2</a>
-                <a href="page3.html" class="button-link">Страница 3</a>
-                <a href="page4.html" class="button-link">Страница 4</a>
-                <a href="page5.html" class="button-link">Страница 5</a>
-                <a href="#" class="sponsor-link">стать спонсором</a>
-            </aside>
-
+        <div class="hero">
+            <div class="hero__inner">
+                <h2>Слоган расположен здесь</h2>
+                <a href="#" class="button button--cta">Начало работы</a>
+            </div>
         </div>
 
+        <div class="container">
+            <div class="tile-row">
+                <div class="tile">
+                    <h4>Заголовок тайла</h4>
+                    <p>
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                    </p>
+                    <a href="#" class="button">Подробнее</a>                    
+                </div>
+
+                <div class="tile">
+                    <h4>Заголовок тайла</h4>
+                    <p>
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                    </p>
+                    <a href="#" class="button">Подробнее</a>                    
+                </div>
+
+                <div class="tile">
+                    <h4>Заголовок тайла</h4>
+                    <p>
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                    </p>
+                    <a href="#" class="button">Подробнее</a>                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                Учебная работа &copy; 2024 Макаров А. В.
+            </div>
+        </footer>
     </body>
 </html>
