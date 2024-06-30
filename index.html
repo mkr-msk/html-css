@@ -5,63 +5,80 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Учебные работы</title>
+        <title>Страница 5</title>
         
         <link type="text/css" rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <nav class="nav-container">
-            <ul class="top-nav">
-                <li class="top-nav__home"><a href="./index.html">Учебные работы</a></li>
-                <li><a href="./modal/index.html">Модальное окно</a></li>
-                <li><a href="./responsive/index.html">Адаптивный дизайн</a></li>
-                <li><a href="#">Ссылка</a></li>
-                <li><a href="#">Ссылка</a></li>
-            </ul>
+        <header id="header" class="page-header">
+            <div class="title">
+                <h1>Страница 5</h1>
+                <div class="slogan">Слоган</div>
+            </div>
+        </header>
+        
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">
+                свернуть меню
+            </button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./modal/index.html">Модальное окно</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="hero">
-            <div class="hero__inner">
-                <h2>Слоган расположен здесь</h2>
-                <a href="#" class="button button--cta">Начало работы</a>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="tile-row">
-                <div class="tile">
-                    <h4>Заголовок тайла</h4>
+        
+        <aside id="hero" class="hero">
+            Добро пожаловать на страницу 5!
+        </aside>
+        
+        <main id="main">
+            <div class="row">
+                <section class="column">
+                    <h2 class="subtitle">Подзаголовок 1</h2>
                     <p>
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице.
                     </p>
-                    <a href="#" class="button">Подробнее</a>                    
-                </div>
-
-                <div class="tile">
-                    <h4>Заголовок тайла</h4>
+                </section>
+                <section class="column">
+                    <h2 class="subtitle">Подзаголовок 2</h2>
                     <p>
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице.
                     </p>
-                    <a href="#" class="button">Подробнее</a>                    
-                </div>
-
-                <div class="tile">
-                    <h4>Заголовок тайла</h4>
+                </section>
+                <section class="column">
+                    <h2 class="subtitle">Подзаголовок 3</h2>
                     <p>
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
-                        Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. Текст тайла. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице. 
+                        Текст на странице. Текст на странице. Текст на странице.
                     </p>
-                    <a href="#" class="button">Подробнее</a>                    
-                </div>
+                </section>
             </div>
-        </div>
-
-        <footer class="page-footer">
-            <div class="page-footer__inner">
-                Учебная работа &copy; 2024 Макаров А. В.
-            </div>
-        </footer>
+        </main>
+        
+        <script type="text/javascript">
+            (function() {
+                var button = document.getElementById('toggle-menu');
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var menu = document.getElementById('main-menu');
+                    menu.classList.toggle('is-open');
+                });
+            })();
+        </script>
     </body>
 </html>
